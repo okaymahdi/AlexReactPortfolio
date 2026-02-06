@@ -30,7 +30,7 @@ const NavBar = () => {
       }`}
       style={{ transform: 'translate3d(0, 0, 0)' }}
     >
-      <div className='max-w-[1320px] w-full mx-auto px-5 flex items-center'>
+      <div className='max-w-330 w-full mx-auto px-5 flex items-center'>
         {/* Logo */}
         <div className='flex items-center gap-4'>
           <Code className='w-6 h-6 text-primary' />
