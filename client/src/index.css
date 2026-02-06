@@ -77,8 +77,8 @@
   }
 
   /* Utility Classes */
-  .animate-fedIn {
-    animation: fedIn 0.5s ease-in-out;
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
   }
 
   .animate-plus {

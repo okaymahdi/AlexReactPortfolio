@@ -1,0 +1,50 @@
+const projects = [
+  {
+    title: 'Project 1',
+    description: 'This is a description of project 1',
+    image: 'project1.jpg',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    category: 'Web App',
+    metrics: '100+ users, 500+ stars',
+    demoUrl: 'https://github.com/user/project1',
+    githubUrl: 'https://github.com/user/project1',
+  },
+  {
+    title: 'Project 2',
+    description: 'This is a description of project 2',
+    image: 'project2.jpg',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    category: 'Desktop App',
+    metrics: '50+ users, 200+ stars',
+    demoUrl: 'https://github.com/user/project2',
+    githubUrl: 'https://github.com/user/project2',
+  },
+  {
+    title: 'Project 3',
+    description: 'This is a description of project 3',
+    image: 'project3.jpg',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    category: 'Ui Components',
+    metrics: '20+ users, 100+ stars',
+    demoUrl: 'https://github.com/user/project3',
+    githubUrl: 'https://github.com/user/project3',
+  },
+  {
+    title: 'Project 4',
+    description: 'This is a description of project 4',
+    image: 'project4.jpg',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    category: 'Full Stack',
+    metrics: '10+ users, 50+ stars',
+    demoUrl: 'https://github.com/user/project4',
+    githubUrl: 'https://github.com/user/project4',
+  },
+];
+
+const categories = [
+  'All',
+  'Web App',
+  'Desktop App',
+  'Ui Components',
+  'Full Stack',
+];
