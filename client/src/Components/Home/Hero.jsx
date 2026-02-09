@@ -9,15 +9,16 @@ import {
 import { scrollToSection } from '../../Hooks/UseScrollSpy';
 import { PERSONAL_INFO, STATS } from '../../Utils/Constants';
 import FadeIn from '../Animations/FadeIn';
+import RedialGradientBackground from '../Backgrounds/RedialGradientBackground';
 
 const Hero = () => {
   return (
     <section className='relative min-h-screen flex items-center  overflow-hidden bg-black mt-12'>
-      {/* <RadialGradientBackground variant='hero' /> */}
+      <RedialGradientBackground variant='hero' />
 
       {/* Content Container */}
       <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 p-12 items-center gap-12'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-12 p-12'>
           {/* Left Column Content */}
           <div className='text-left'>
             <FadeIn delay={0}>
@@ -72,7 +73,13 @@ const Hero = () => {
           {/* Right Column Developer Image */}
           <FadeIn delay={200}>
             <div className='relative'>
-              <div className='relative overflow-hidden rounded-2xl aspect-4/5 max-w-125 mx-auto lg:ml-auto group'>
+              <div
+                className='relative overflow-hidden rounded-2xl aspect-4/5 
+                w-full max-w-full 
+                sm:max-w-105 
+                lg:max-w-125 
+                mx-auto lg:ml-auto group'
+              >
                 <div className='absolute inset-0 rounded-2xl overflow-hidden'>
                   <div className='absolute -inset-0.5 bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl' />
                 </div>
