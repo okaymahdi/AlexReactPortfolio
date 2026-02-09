@@ -4,6 +4,8 @@ const PERSONAL_INFO = {
   email: 'alexreactportfolio@gmail.com',
   phone: '+1 (123) 456-7890',
   location: '123 Main St, Anytown, USA',
+  image:
+    'https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?t=st=1770618138~exp=1770621738~hmac=b4c294b27dec71a60444673e1fe65e192e3453d4ed0e404dd1e88602e65411ea&w=1480',
   tagline:
     'Passionate about building beautiful and functional web applications',
   resume: 'https://www.alexreactportfolio.com/resume.pdf',

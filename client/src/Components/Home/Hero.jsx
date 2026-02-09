@@ -1,15 +1,23 @@
-import { Star } from 'lucide-react';
+import { ChevronDown, Star } from 'lucide-react';
+import {
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+} from 'react-icons/si';
+import { scrollToSection } from '../../Hooks/UseScrollSpy';
 import { PERSONAL_INFO, STATS } from '../../Utils/Constants';
 import FadeIn from '../Animations/FadeIn';
 
 const Hero = () => {
   return (
-    <section className='relative min-h-screen flex items-center  overflow-hidden bg-black'>
+    <section className='relative min-h-screen flex items-center  overflow-hidden bg-black mt-12'>
       {/* <RadialGradientBackground variant='hero' /> */}
 
       {/* Content Container */}
       <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 p-12 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 p-12 items-center gap-12'>
           {/* Left Column Content */}
           <div className='text-left'>
             <FadeIn delay={0}>
@@ -60,8 +68,58 @@ const Hero = () => {
               </div>
             </FadeIn>
           </div>
+
+          {/* Right Column Developer Image */}
+          <FadeIn delay={200}>
+            <div className='relative'>
+              <div className='relative overflow-hidden rounded-2xl aspect-4/5 max-w-125 mx-auto lg:ml-auto group'>
+                <div className='absolute inset-0 rounded-2xl overflow-hidden'>
+                  <div className='absolute -inset-0.5 bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl' />
+                </div>
+                {/* Image Container */}
+                <div className='relative rounded-2xl overflow-hidden m-px h-[calc(100%-2px)]'>
+                  <img
+                    src={PERSONAL_INFO.image}
+                    alt={PERSONAL_INFO.name}
+                    className='w-full h-full object-cover'
+                  />
+                </div>
+
+                {/* Technology Logs */}
+                <div className='absolute bottom-6 left-6 z-20'>
+                  <FadeIn delay={500}>
+                    <div className='flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2'>
+                      <div className='w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300'>
+                        <SiReact className='w-full h-full text-primary' />
+                      </div>
+                      <div className='w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300'>
+                        <SiNextdotjs className='w-full h-full text-primary' />
+                      </div>
+                      <div className='w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300'>
+                        <SiNodedotjs className='w-full h-full text-primary' />
+                      </div>
+                      <div className='w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300'>
+                        <SiTailwindcss className='w-full h-full text-primary' />
+                      </div>
+                      <div className='w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300'>
+                        <SiMongodb className='w-full h-full text-primary' />
+                      </div>
+                    </div>
+                  </FadeIn>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <button
+        onClick={() => scrollToSection('about')}
+        className='absolute bottom-1 md:bottom-3 lg:bottom-8 left-1/2 -translate-x-1/2 animate-bounce'
+      >
+        <ChevronDown className='w-8 h-8 text-primary' />
+      </button>
     </section>
   );
 };
